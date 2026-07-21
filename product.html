@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Product — Anior Organic</title>
+<meta name="description" content="Certified organic product from Anior Organic, Bangalore." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Manrope:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="announce" aria-live="polite">
+  <div class="announce__track">
+    <span>🌿 Free delivery on orders above ₹999</span><span>•</span>
+    <span>Certified organic &amp; chemical-free</span><span>•</span>
+    <span>Dispatched within 24–48 hrs</span><span>•</span>
+    <span>Extra 5% off your first order — code <b>ANIOR5</b></span><span>•</span>
+    <span>🌿 Free delivery on orders above ₹999</span><span>•</span>
+    <span>Certified organic &amp; chemical-free</span><span>•</span>
+    <span>Dispatched within 24–48 hrs</span><span>•</span>
+    <span>Extra 5% off your first order — code <b>ANIOR5</b></span><span>•</span>
+  </div>
+</div>
+
+<header class="header" id="header">
+  <div class="header__inner">
+    <button class="icon-btn header__burger" id="burgerBtn" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <a href="index.html" class="logo" aria-label="Anior Organic home">
+      <svg viewBox="0 0 32 32" class="logo__mark" aria-hidden="true">
+        <path d="M16 3C9 8 6 14 8 22c1 4 4 6 8 7 4-1 7-3 8-7 2-8-1-14-8-19Z" fill="currentColor"/>
+        <path d="M16 9v18" stroke="#fbf8f0" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+        <path d="M16 15c-2-1-4-1-6-3M16 19c2-1 4-1 6-3" stroke="#fbf8f0" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+      </svg>
+      <span class="logo__text">
+        <span class="logo__name">Anior <em>Organic</em></span>
+        <span class="logo__tag">Holistic Healthy Living</span>
+      </span>
+    </a>
+
+    <nav class="nav" id="mainNav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="index.html#reviews">Reviews</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="header__actions">
+      <a class="icon-btn" href="shop.html" aria-label="Search products" title="Search in shop">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></svg>
+      </a>
+      <button class="icon-btn cart-btn" id="cartToggle" aria-label="Open cart">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 7h13l-1.3 9.2a2 2 0 0 1-2 1.8H9.3a2 2 0 0 1-2-1.8L6 4H3"/><circle cx="10" cy="20.5" r="1.3"/><circle cx="17" cy="20.5" r="1.3"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="section" id="pdp" style="padding-top:1.6rem">
+  <nav class="crumbs crumbs--dark" aria-label="Breadcrumb"><a href="index.html">Home</a> <span>›</span> <a href="shop.html">Shop</a> <span>›</span> <span aria-current="page" id="pdpCrumb">Product</span></nav>
+  <div class="pdp__grid">
+    <div class="pdp__media reveal in" id="pdpMedia"></div>
+    <div class="pdp__info">
+      <span class="product-card__cat" id="pdpCat"></span>
+      <h1 id="pdpName"></h1>
+      <div class="product-card__rating" id="pdpRating"></div>
+      <div class="product-card__price pdp__price" id="pdpPrice"></div>
+      <p class="pdp__desc" id="pdpDesc"></p>
+
+      <div class="pdp__buy">
+        <div class="qv__qty">
+          <button id="pdpDec" aria-label="Decrease quantity">−</button>
+          <span id="pdpQty">1</span>
+          <button id="pdpInc" aria-label="Increase quantity">＋</button>
+        </div>
+        <button class="btn btn--solid" id="pdpAdd">＋ Add to basket</button>
+        <button class="btn btn--ghost" id="pdpBuy">Buy now</button>
+      </div>
+
+      <div class="pdp__perks">
+        <div><span>🚚</span> Free delivery over ₹999</div>
+        <div><span>🔁</span> 7-day easy returns</div>
+        <div><span>🔬</span> Lab-tested purity</div>
+        <div><span>🌱</span> Certified organic</div>
+      </div>
+
+      <details class="pdp__acc" open>
+        <summary>Sourcing &amp; certification</summary>
+        <p>Grown by our certified partner farms and processed in FSSAI-licensed facilities. Every batch carries a traceable lot number — scan the pack QR to meet your farmer.</p>
+      </details>
+      <details class="pdp__acc">
+        <summary>Storage &amp; shelf life</summary>
+        <p>Store in a cool, dry place away from direct sunlight. Best consumed within 6–9 months of the packed date printed on the jar.</p>
+      </details>
+      <details class="pdp__acc">
+        <summary>Shipping &amp; returns</summary>
+        <p>Dispatched from Bangalore within 24–48 hours. If anything arrives damaged, WhatsApp us a photo within 7 days for an instant replacement or refund.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="section__head">
+    <p class="eyebrow">Pairs well with</p>
+    <h2>You may also like</h2>
+  </div>
+  <div class="product-grid" id="relatedGrid"></div>
+</section>
+</main>
+
+<footer class="footer" id="contact-footer">
+  <div class="footer__grid">
+    <div class="footer__brand">
+      <a href="index.html" class="logo logo--footer">
+        <svg viewBox="0 0 32 32" class="logo__mark" aria-hidden="true">
+          <path d="M16 3C9 8 6 14 8 22c1 4 4 6 8 7 4-1 7-3 8-7 2-8-1-14-8-19Z" fill="currentColor"/>
+          <path d="M16 9v18" stroke="#20422f" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+        </svg>
+        <span class="logo__text"><span class="logo__name">Anior <em>Organic</em></span></span>
+      </a>
+      <p class="footer__tag">Holistic Healthy Living. Certified organic staples, sourced with care and delivered across India from Bangalore.</p>
+      <div class="socials">
+        <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram" class="social">
+          <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://wa.me/919876543210?text=Hi%20Anior%20Organic!" target="_blank" rel="noopener" aria-label="WhatsApp" class="social">
+          <svg viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 1-11.9 7L4 20l1.1-4A8 8 0 1 1 20 12Z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5.6 0 1-.2 1-.8 0-.4-1-.9-1.4-1-.4 0-.6.4-.9.4-.6 0-2.2-1.6-2.2-2.2 0-.3.4-.5.4-.9 0-.4-.6-1.4-1-1.4-.6 0-.9.4-.9 1Z" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook" class="social">
+          <svg viewBox="0 0 24 24"><path d="M14 8h2V5h-2c-1.7 0-3 1.3-3 3v2H9v3h2v6h3v-6h2l1-3h-3V8.5c0-.3.2-.5.5-.5H14Z" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube" class="social">
+          <svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="3.5"/><path d="M11 9.5v5l4-2.5-4-2.5Z" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://x.com" target="_blank" rel="noopener" aria-label="X" class="social">
+          <svg viewBox="0 0 24 24"><path d="M4 4l7 8-7 8h2.5L12 13l5.5 7H20l-7-8 7-8h-2.5L12 11 6.5 4H4Z" fill="currentColor" stroke="none"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer__col">
+      <h4>Shop</h4>
+      <a href="shop.html?cat=Oils">Ghee &amp; Oils</a>
+      <a href="shop.html?cat=Sweeteners">Honey &amp; Sweeteners</a>
+      <a href="shop.html?cat=Pulses">Pulses</a>
+      <a href="shop.html?cat=Grains">Grains &amp; Millets</a>
+      <a href="shop.html?cat=Spices">Spices</a>
+      <a href="shop.html?cat=Superfoods">Superfoods</a>
+    </div>
+
+    <div class="footer__col">
+      <h4>Company</h4>
+      <a href="about.html">Our Story</a>
+      <a href="about.html#values">Our Promise</a>
+      <a href="index.html#reviews">Reviews</a>
+      <a href="contact.html">Contact</a>
+      <a href="index.html#newsletter">Newsletter</a>
+    </div>
+
+    <div class="footer__col footer__col--contact">
+      <h4>Get in touch</h4>
+      <p>Anior Organic<br>Indiranagar, Bangalore, Karnataka 560038</p>
+      <a href="mailto:hello@aniororganic.com">hello@aniororganic.com</a>
+      <a href="tel:+919876543210">+91 98765 43210</a>
+      <a href="https://wa.me/919876543210?text=Hi%20Anior%20Organic!" target="_blank" rel="noopener" class="footer__wa">💬 Chat on WhatsApp</a>
+    </div>
+  </div>
+
+  <div class="footer__bar">
+    <p>© <span id="year"></span> Anior Organic. All rights reserved.</p>
+    <p>Made with 🌿 in Bangalore</p>
+  </div>
+</footer>
+
+<div class="overlay" id="overlay" hidden></div>
+<aside class="cart" id="cart" aria-label="Shopping cart" aria-hidden="true">
+  <header class="cart__head">
+    <h3>Your basket</h3>
+    <button class="icon-btn" id="cartClose" aria-label="Close cart">✕</button>
+  </header>
+  <div class="cart__ship" id="cartShip">
+    <p id="shipMsg">Add ₹999 more for free delivery 🚚</p>
+    <div class="cart__bar"><span id="shipBar"></span></div>
+  </div>
+  <div class="cart__items" id="cartItems"></div>
+  <div class="cart__empty" id="cartEmpty">
+    <span>🧺</span>
+    <p>Your basket is empty.</p>
+    <button class="btn btn--solid" id="cartEmptyShop">Start shopping</button>
+  </div>
+  <footer class="cart__foot" id="cartFoot" hidden>
+    <div class="cart__row"><span>Subtotal</span><strong id="cartSubtotal">₹0</strong></div>
+    <p class="cart__note">Taxes included. Shipping calculated at checkout.</p>
+    <button class="btn btn--solid btn--block" id="checkoutBtn">Checkout</button>
+  </footer>
+</aside>
+
+<div class="qv" id="qv" aria-hidden="true" role="dialog" aria-label="Product quick view">
+  <div class="qv__card" id="qvCard">
+    <button class="icon-btn qv__close" id="qvClose" aria-label="Close quick view">✕</button>
+    <div class="qv__media" id="qvMedia"></div>
+    <div class="qv__body">
+      <span class="product-card__cat" id="qvCat"></span>
+      <h3 id="qvName"></h3>
+      <div class="product-card__rating" id="qvRating"></div>
+      <p class="qv__desc" id="qvDesc"></p>
+      <div class="product-card__price" id="qvPrice"></div>
+      <div class="qv__qty">
+        <button id="qvDec" aria-label="Decrease quantity">−</button>
+        <span id="qvQty">1</span>
+        <button id="qvInc" aria-label="Increase quantity">＋</button>
+      </div>
+      <button class="btn btn--solid btn--block" id="qvAdd">Add to basket</button>
+    </div>
+  </div>
+</div>
+
+<a href="https://wa.me/919876543210?text=Hi%20Anior%20Organic!" target="_blank" rel="noopener" class="fab-wa" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 1-11.9 7L4 20l1.1-4A8 8 0 1 1 20 12Z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5.6 0 1-.2 1-.8 0-.4-1-.9-1.4-1-.4 0-.6.4-.9.4-.6 0-2.2-1.6-2.2-2.2 0-.3.4-.5.4-.9 0-.4-.6-1.4-1-1.4-.6 0-.9.4-.9 1Z" fill="currentColor"/></svg>
+</a>
+<button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
